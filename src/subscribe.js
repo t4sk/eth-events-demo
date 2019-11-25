@@ -17,7 +17,7 @@ async function main() {
   contract.events.Transfer(
     {
       // filter by sender
-      filter: { src: "0x526af336D614adE5cc252A407062B8861aF998F5" }
+      filter: { src: "0x39755357759ce0d7f32dc8dc45414cca409ae24e" }
     },
     (error, log) => {
       if (error) {

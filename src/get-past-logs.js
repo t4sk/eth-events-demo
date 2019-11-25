@@ -18,12 +18,12 @@ async function main() {
 
   const logs = await contract.getPastEvents("Transfer", {
     fromBlock: latest - 100,
-    toBlock: latest
+    toBlock: latest,
     // filter by sender
-    // filter: { src: "0x526af336D614adE5cc252A407062B8861aF998F5" },
+    // filter: { src: "0x526af336D614adE5cc252A407062B8861aF998F5" }
 
     // filter by receiver
-    // filter: { dst: "0x39755357759ce0d7f32dc8dc45414cca409ae24e" }
+    filter: { dst: "0x39755357759ce0d7f32dc8dc45414cca409ae24e" }
   });
 
   // console.log("Logs", logs, `${logs.length} logs`);
